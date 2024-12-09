@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>拡張HTMLサンプル</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            margin: 0;
+            padding: 0;
+        }
+        header {
+            background: #4CAF50;
+            color: white;
+            text-align: center;
+            padding: 10px 0;
+        }
+        main {
+            padding: 20px;
+        }
+        section {
+            margin-bottom: 20px;
+        }
+        footer {
+            background: #f4f4f4;
+            text-align: center;
+            padding: 10px 0;
+            margin-top: 20px;
+        }
+        .image-container img {
+            max-width: 100%;
+            height: auto;
+            border: 1px solid #ddd;
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 20px 0;
+        }
+        table th, table td {
+            border: 1px solid #ddd;
+            padding: 8px;
+            text-align: center;
+        }
+        table th {
+            background-color: #f4f4f4;
+        }
+        .form-container {
+            margin-top: 20px;
+            padding: 15px;
+            border: 1px solid #ccc;
+            background: #f9f9f9;
+        }
+        .form-container input, .form-container button {
+            width: 100%;
+            padding: 10px;
+            margin: 5px 0;
+            box-sizing: border-box;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>HTMLの世界へようこそ！</h1>
+    </header>
+    <main>
+        <!-- 紹介セクション -->
+        <section>
+            <h2>自己紹介</h2>
+            <p>このページはHTMLとCSSを活用したデモンストレーションです。</p>
+            <ul>
+                <li>HTMLの基本</li>
+                <li>CSSでのスタイリング</li>
+                <li>レスポンシブデザイン</li>
+            </ul>
+        </section>
+
+        <!-- 画像セクション -->
+        <section>
+            <h2>画像の例</h2>
+            <div class="image-container">
+                <img src="https://via.placeholder.com/600x300" alt="サンプル画像">
+            </div>
+            <p>上の画像はサンプルのプレースホルダー画像です。</p>
+        </section>
+
+        <!-- テーブルセクション -->
+        <section>
+            <h2>データテーブルの例</h2>
+            <table>
+                <thead>
+                    <tr>
+                        <th>名前</th>
+                        <th>年齢</th>
+                        <th>職業</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>山田 太郎</td>
+                        <td>25</td>
+                        <td>エンジニア</td>
+                    </tr>
+                    <tr>
+                        <td>佐藤 花子</td>
+                        <td>30</td>
+                        <td>デザイナー</td>
+                    </tr>
+                    <tr>
+                        <td>鈴木 一郎</td>
+                        <td>35</td>
+                        <td>マーケティング</td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+<hr>
+<h1>Unicodeを送信</h1>
+<hr>
+<a href="https://scratch.mit.edu" class="btn">
+<label for="url">送信</label>
+
+        <!-- フォームセクション -->
+        <section>
+            <h2>お問い合わせフォーム</h2>
+            <div class="form-container">
+                <form action="#" method="post">
+                    <label for="name">お名前：</label>
+                    <input type="text" id="name" name="name" placeholder="お名前を入力してください" required>
+                    
+                    <label for="email">メールアドレス：</label>
+                    <input type="email" id="email" name="email" placeholder="example@example.com" required>
+                    
+                    <label for="message">メッセージ：</label>
+                    <textarea id="message" name="message" rows="5" placeholder="お問い合わせ内容を入力してください" required></textarea>
+                    
+                    <button type="submit">送信</button>
+                </form>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2024 PsanのHTMLサンプル | <a href="#header">ページのトップへ戻る</a></p>
+    </footer>
+</body>
+</html>
